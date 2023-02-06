@@ -18,23 +18,23 @@ Para ejecutar el proyecto se deben realizar los siguientes pasos
 	
 
 	- Test 1: petición a las 10:00 del día 14 del producto 35455   para la brand 1 (ZARA)
-		curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2020-06-14-10.00.00&productId=35455&brandId=1'
+		- curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2020-06-14-10.00.00&productId=35455&brandId=1'
 
 	- Test 2: petición a las 16:00 del día 14 del producto 35455   para la brand 1 (ZARA)
-		curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2020-06-14-16.00.00&productId=35455&brandId=1'
+		- curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2020-06-14-16.00.00&productId=35455&brandId=1'
 
 	- Test 3: petición a las 21:00 del día 14 del producto 35455   para la brand 1 (ZARA)
-		curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2020-06-14-21.00.00&productId=35455&brandId=1'
+		- curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2020-06-14-21.00.00&productId=35455&brandId=1'
 
 	- Test 4: petición a las 10:00 del día 15 del producto 35455   para la brand 1 (ZARA)
-		curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2020-06-15-10.00.00&productId=35455&brandId=1'
+		- curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2020-06-15-10.00.00&productId=35455&brandId=1'
 
 	- Test 5: petición a las 21:00 del día 16 del producto 35455   para la brand 1 (ZARA)
-		curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2020-06-16-21.00.00&productId=35455&brandId=1'
+		- curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2020-06-16-21.00.00&productId=35455&brandId=1'
 
 	- Test 6: 204 No content cuando no existe información con los parametros ingresados
-		curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2010-06-16-21.00.00&productId=35455&brandId=1'
+		- curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2010-06-16-21.00.00&productId=35455&brandId=1'
 
 	- Test 7: 400 Bad request cuando el/los valores de los parametros tienen formato invalido
-		curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2010-06-16-21.00&productId=35455&brandId=1'
+		- curl --location --request GET 'http://localhost:8080/complemento/checkPrices?applicationDate=2010-06-16-21.00&productId=35455&brandId=1'
 
